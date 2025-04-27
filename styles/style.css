@@ -283,6 +283,7 @@ ol {
 	width: 19px;
 	height: 19px;
 	border: 1px solid #ffffff;
+	position: relative;
 }
 
 .search-form__label-text {
