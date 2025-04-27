@@ -16,6 +16,11 @@ html {
 	font-family: 'Fira Sans Condensed', sans-serif;
 	font-size: 18px;
 	background-color: #1b1919;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 h1,
@@ -50,14 +55,6 @@ ol {
 	background-color: #d9d9d9;
 }
 
-.page {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
 .content {
 	width: 1140px;
 	display: grid;
@@ -74,6 +71,7 @@ ol {
 }
 
 .result__video-container {
+	position: relative;
 	width: 711px;
 	height: 386px;
 }
@@ -82,6 +80,7 @@ ol {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	object-position: center;
 }
 
 .content__details {
@@ -102,12 +101,14 @@ ol {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	margin-bottom: 30px;
+	margin: 1px 0 30px;
 }
 
 .content__card-link {
 	display: block;
 	cursor: pointer;
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .content__card-link:focus {
@@ -123,18 +124,24 @@ ol {
 	display: flex;
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
 	text-decoration: underline;
 }
 
-.content__video-card:active {
+.content__card-link:active {
 	background-color: #545050;
 	text-decoration: none;
+}
+
+.content__card-link.content__card-link_current {
+	outline: 1px solid #cccccc;
 }
 
 .content__video-card-thumbnail {
 	width: 194px;
 	height: 103px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .content__video-card-description-container {
@@ -162,11 +169,6 @@ ol {
 	color: #545050;
 }
 
-.content__card-link {
-	text-decoration: none;
-	color: #ffffff;
-}
-
 .content__video-card-title {
 	font-family: Oswald, sans-serif;
 	font-size: 30px;
@@ -189,6 +191,7 @@ ol {
 
 .button {
 	all: unset;
+	font-weight: 700;
 	border: 1px solid #fff;
 	display: flex;
 	justify-content: center;
@@ -244,12 +247,12 @@ ol {
 
 .search-form__textfield {
 	all: unset;
-	width: 225px;
+	min-width: 225px;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: 143%;
 	letter-spacing: 0;
-	color: #ffffffb2;
+	color: #ffffff;
 	border-bottom: 1px solid #ffffff;
 	border-top: 1px solid #ffffff;
 }
@@ -280,14 +283,13 @@ ol {
 	width: 19px;
 	height: 19px;
 	border: 1px solid #ffffff;
-	position: relative;
 }
 
 .search-form__label-text {
 	cursor: pointer;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
 	text-decoration: underline;
 }
 
