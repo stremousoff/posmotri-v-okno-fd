@@ -160,6 +160,7 @@ ol {
 	line-height: 94%;
 	letter-spacing: 0;
 	text-transform: uppercase;
+	padding-bottom: 7px;
 }
 
 .content__accent {
