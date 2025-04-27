@@ -93,7 +93,7 @@ ol {
 .content__list-container {
 	position: relative;
 	height: 298px;
-	overflow-y: scroll;
+	overflow: auto;
 	padding-left: 2px;
 	padding-right: 2px;
 }
@@ -121,7 +121,6 @@ ol {
 
 .content__video-card {
 	display: flex;
-	align-items: start;
 }
 
 .content__video-card:hover {
@@ -136,8 +135,6 @@ ol {
 .content__video-card-thumbnail {
 	width: 194px;
 	height: 103px;
-	object-fit: cover;
-	object-position: center;
 }
 
 .content__video-card-description-container {
@@ -151,14 +148,12 @@ ol {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 0;
 }
 
 .title {
 	font-family: Oswald, sans-serif;
 	font-size: 75px;
 	line-height: 94%;
-	letter-spacing: 0;
 	text-transform: uppercase;
 	padding-bottom: 7px;
 }
@@ -174,10 +169,8 @@ ol {
 
 .content__video-card-title {
 	font-family: Oswald, sans-serif;
-	font-weight: 700;
 	font-size: 30px;
 	line-height: 100%;
-	letter-spacing: 0;
 	text-transform: uppercase;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -186,11 +179,7 @@ ol {
 }
 
 .content__video-card-description {
-	font-family: Fira Sans Condensed, sans-serif;
-	font-weight: 400;
-	font-size: 18px;
 	line-height: 16.2px;
-	letter-spacing: 0;
 	line-clamp: 2;
 	-webkit-line-clamp: 2;
 	display: -webkit-box;
@@ -204,10 +193,7 @@ ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: Fira Sans Condensed, sans-serif;
-	font-size: 18px;
 	line-height: 100%;
-	letter-spacing: 0;
 	cursor: pointer;
 }
 
@@ -294,7 +280,6 @@ ol {
 	width: 19px;
 	height: 19px;
 	border: 1px solid #ffffff;
-	align-self: center;
 	position: relative;
 }
 
@@ -307,8 +292,8 @@ ol {
 }
 
 input[type='checkbox']:checked + .search-form__pseudo-checkbox::after {
-	position: absolute;
 	content: '';
+	position: absolute;
 	inset: 1px;
 	display: block;
 	background-color: #ffffff;
