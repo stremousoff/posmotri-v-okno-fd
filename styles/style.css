@@ -134,7 +134,6 @@ ol {
 }
 
 .content__card-link.content__card-link_current {
-	outline: 1px solid #cccccc;
 	background-color: #545050;
 }
 
