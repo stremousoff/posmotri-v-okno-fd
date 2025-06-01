@@ -21,4 +21,4 @@
 
 ### Сайт
 
-![Сайт можно посмотреть по этой ссылке]([./demo/demo.gif?autoplay=1](https://stremousoff.github.io/posmotri-v-okno-fd/))
+![Сайт можно посмотреть по этой ссылке](https://stremousoff.github.io/posmotri-v-okno-fd/)
